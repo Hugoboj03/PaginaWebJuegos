@@ -1,0 +1,25 @@
+$color1:#ff8000;
+$color2:#2e5f64;
+.titulo1{
+    color:$color1;
+    font-size:1.6 rem;
+    text-align: center;
+    padding: 6px;
+}
+
+.titulo2{
+    color:$color2;
+    font-size:1.4 rem;
+    text-decoration: underline;
+    padding:5px;
+}
+
+.parrafo1{
+    text-align:right;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.parrafo2{
+    text-align:center;
+    font-style: italic ;
+}

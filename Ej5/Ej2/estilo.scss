@@ -1,0 +1,12 @@
+@import "C:/Users/alumno/Downloads/bootstrap-5.0.2/scss/bootstrap.scss";
+
+$colores: blue, indigo, purple, pink, red, orange, yellow, green, teal, cyan;
+
+
+@for $i from 1 through length($colores) {
+  $color: nth($colores, $i); 
+  .btn-#{$color} {
+    background-color: $color;  // Usar la variable CSS correspondiente
+    color: white; // Para que el texto sea blanco
+  }
+}

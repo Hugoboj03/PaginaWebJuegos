@@ -1,0 +1,26 @@
+h1 {
+  color: red;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: grey;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+}/*# sourceMappingURL=estilo_scss.css.map */

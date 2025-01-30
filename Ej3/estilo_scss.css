@@ -1,0 +1,45 @@
+button {
+  color: white;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin: 20px;
+}
+
+#boton1 {
+  background-color: blue;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#boton1:hover {
+  background-color: #000099;
+}
+
+#boton2 {
+  background-color: green;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#boton2:hover {
+  background-color: #001a00;
+}
+
+#boton3 {
+  background-color: red;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+#boton3:hover {
+  background-color: #990000;
+}/*# sourceMappingURL=estilo_scss.css.map */

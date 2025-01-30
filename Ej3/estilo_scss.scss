@@ -1,0 +1,54 @@
+$primario:blue;
+$exito:green;
+$peligro:red;
+$letraColor:white;
+
+button{
+    color: $letraColor;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin: 20px;
+}
+
+#boton1{
+    background-color: $primario;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    
+    
+}
+
+#boton1:hover{
+    background-color:darken($primario, 20%);
+}
+
+
+
+#boton2{
+    background-color: $exito;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#boton2:hover{
+    background-color: darken($exito, 20%);
+}
+
+#boton3{
+    background-color: $peligro;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#boton3:hover{
+    background-color: darken($peligro, 20%);
+}

@@ -1,0 +1,106 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: auto;
+}
+
+/*Header*/
+header {
+  background-color: grey;
+  padding: 20px;
+}
+
+/*Menu*/
+nav {
+  display: flex;
+  width: 100%;
+  background-color: #15a;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  background-color: #15a;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+
+/*Menu desplegable */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #15a;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+nav ul li ul li:hover {
+  background-color: #166cd8;
+}
+
+nav ul li ul li a:hover {
+  color: #d5d5d5;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+li ul li {
+  width: 70%;
+}
+
+/*Main*/
+h1 {
+  color: #15a;
+}
+
+main {
+  display: flex;
+}
+
+input {
+  width: 280px;
+}
+
+button {
+  background-color: #15a;
+  color: #eee;
+  width: 280px;
+}
+
+footer {
+  color: #eee;
+  background-color: #15a;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  form {
+    text-align: center;
+  }
+  input {
+    text-align: center;
+    width: 90%;
+  }
+  button {
+    width: 90%;
+  }
+}/*# sourceMappingURL=estilo.css.map */
