@@ -6,7 +6,7 @@ body {
 
 header, nav, footer {
   width: 100%;
-  background-color: #5b78a7;
+  background-color: #2e518b;
 }
 
 /* menu */
@@ -31,6 +31,7 @@ nav ul a {
   font-weight: 400;
   font-size: 15px;
   padding: 10px;
+  margin-top: 10px;
   font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -65,6 +66,7 @@ nav ul ul li {
 
 /* enlaces de los items del menu desplegable */
 nav ul ul a {
+  margin-top: -5px;
   line-height: 120%;
   padding: 10px 15px;
 }
@@ -72,4 +74,48 @@ nav ul ul a {
 /* items del menu desplegable al pasar el ratón */
 nav ul li:hover > ul {
   display: block;
+}
+
+/* formulario */
+input {
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+nav form button {
+  border-radius: 10px;
+  width: 75px;
+  height: 35px;
+}
+
+/* Main */
+article {
+  width: 70%;
+  float: left;
+  background-color: lightblue;
+}
+
+aside {
+  float: right;
+  background-color: aqua;
+  width: 30%;
+}
+
+section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main section div {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main section div img {
+  height: 200px;
+  border-radius: 10px;
 }/*# sourceMappingURL=estilo.css.map */
