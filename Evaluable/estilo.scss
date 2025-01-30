@@ -1,12 +1,33 @@
 $colorTexto: #eee;
 $colorFondo: #15a;
 
+// Mixins
+@mixin transition($property, $duration, $timing: linear) {
+    transition: $property $duration $timing;
+    -webkit-transition: $property $duration $timing;
+    -moz-transition: $property $duration $timing;
+    -o-transition: $property $duration $timing;
+  }
+  
+  @mixin responsive($size) {
+    @if $size == medium {
+      @media screen and (max-width: 1024px) {
+        @content;
+      }
+    } @else if $size == small {
+      @media screen and (max-width: 800px) {
+        @content;
+      }
+    }
+  }
+
 
 
 body{
     
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: auto;
+    
 }
 
 /*Header*/
@@ -42,8 +63,9 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: $colorTexto;
     display: block;
+    @include transition(color, 0.3s);
 }
 
 /*Menu desplegable */
@@ -53,6 +75,7 @@ nav ul li ul {
     top: 100%;
     left: 0;
     background-color: $colorFondo;
+    @include transition(background-color, 0.3s);
     list-style: none;
     padding: 0;
     margin: 0;
@@ -100,12 +123,14 @@ button{
     color: $colorTexto;
     width: 280px;
 }
+
+/*Footer*/
 footer{
     color: $colorTexto;
     background-color: $colorFondo;
 }
 
-@media screen and (max-width: 800px){
+@include responsive(small){
 
     main{
         display: flex;
