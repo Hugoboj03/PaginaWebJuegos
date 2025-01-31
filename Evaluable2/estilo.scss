@@ -1,18 +1,27 @@
 $colorNav: #2e518b;
 $colorDesplegable: #5b78a7;
+$blanco: #fff;
+
+
 
 body{
     width: 90%;
     margin: auto;
+    background-color: rgb(66, 194, 194);
 }
 
-header, nav, footer {
+header, nav,main, footer {
 
     width: 100%;
     background-color:$colorNav;
 
 }
 
+header{
+    text-align: center;
+    color: $blanco;
+    
+}
 
 /* menu */
 
@@ -104,14 +113,19 @@ nav ul ul {
 
    nav form button {
     border-radius: 10px;
-    width: 75px;
+    width: 70px;
     height: 35px;
    }
 
    /* Main */
 
+   main{
+    display: flex;
+   }
+
+
    article{
-    width: 70%;
+    width: 90%;
     float: left;
     background-color: lightblue;
    }
@@ -119,7 +133,7 @@ nav ul ul {
    aside{
     float: right;
     background-color: aqua;
-    width: 30%;
+    width: 10%;
    }
 
    section{
