@@ -7,12 +7,13 @@ $blanco: #fff;
 body{
     width: 90%;
     margin: auto;
-    background-color: rgb(66, 194, 194);
+    background-image: url(imagenes/fondo.jpg);
+    //background-color: rgb(66, 194, 194);
 }
 
-header, nav,main, footer {
+header, nav, footer {
 
-    width: 100%;
+    //width: 100%;
     background-color:$colorNav;
 
 }
@@ -126,21 +127,52 @@ nav ul ul {
    /* Main */
 
    main{
+
+    margin-top: 20px;
+    //padding-top: 50px;
     display: flex;
     //align-items: center;
+   
    }
 
 
    article{
+    //margin-top: 80px;
     width: 90%;
-    float: left;
+    //float: left;
     background-color: lightblue;
+   }
+
+   /* Section Juegos */
+
+   
+
+   .sectionJuegos{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   }
+
+   .divJuegos{
+    //display: flex;
+    //justify-content: space-around;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+   }
+
+   main section div img{
+    height: 200px;
+    border-radius: 10px;
+    
    }
 
    /* Aside */
 
    aside{
-    float: right;
+    //float: right;
     background-color: aqua;
     width: 10%;
    }
@@ -168,25 +200,7 @@ nav ul ul {
     background-color: #5b78a7;
    }
 
-   section{
-    
-    padding-top: 10px;
-    padding-bottom: 10px;
-   }
-
-   main section div{
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-   }
-
-   main section div img{
-    height: 200px;
-    border-radius: 10px;
-    
-   }
+   
 
    /* Footer */
    
@@ -211,7 +225,7 @@ nav ul ul {
 /* Responsive */
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 630px) {
 
     input{
         width: 100px;
@@ -225,7 +239,7 @@ nav ul ul {
     display: none;
    }
 
-    main section div{
+    main section{
     flex-direction: column;
    }
 

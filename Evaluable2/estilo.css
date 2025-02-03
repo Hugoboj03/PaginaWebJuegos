@@ -2,11 +2,10 @@
 body {
   width: 90%;
   margin: auto;
-  background-color: rgb(66, 194, 194);
+  background-image: url(imagenes/fondo.jpg);
 }
 
-header, nav, main, footer {
-  width: 100%;
+header, nav, footer {
   background-color: #2e518b;
 }
 
@@ -104,18 +103,36 @@ nav form button {
 
 /* Main */
 main {
+  margin-top: 20px;
   display: flex;
 }
 
 article {
   width: 90%;
-  float: left;
   background-color: lightblue;
+}
+
+/* Section Juegos */
+.sectionJuegos {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.divJuegos {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main section div img {
+  height: 200px;
+  border-radius: 10px;
 }
 
 /* Aside */
 aside {
-  float: right;
   background-color: aqua;
   width: 10%;
 }
@@ -142,23 +159,6 @@ aside ul li:hover {
   background-color: #5b78a7;
 }
 
-section {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-main section div {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-main section div img {
-  height: 200px;
-  border-radius: 10px;
-}
-
 /* Footer */
 footer {
   display: flex;
@@ -173,7 +173,7 @@ footer ul {
 }
 
 /* Responsive */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 630px) {
   input {
     width: 100px;
     padding: 10px;
@@ -183,7 +183,7 @@ footer ul {
   aside {
     display: none;
   }
-  main section div {
+  main section {
     flex-direction: column;
   }
   article {
