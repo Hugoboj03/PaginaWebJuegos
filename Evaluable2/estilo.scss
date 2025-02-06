@@ -1,256 +1,325 @@
-$colorNav: #2e518b;
-$colorDesplegable: #5b78a7;
+$colorNav: #473144;
+$colorDesplegable: #AF1B3F;
 $blanco: #fff;
+$aside: #CCB69B;
+$asideResaltar: #DF9B6D;
+$descripcion: #DF9B6D;
+$articleColor: #EFC69B;
 
 
 
-body{
+
+body {
     width: 90%;
     margin: auto;
     background-image: url(imagenes/fondo.jpg);
     //background-color: rgb(66, 194, 194);
 }
 
-header, nav, footer {
+header,
+nav,
+footer {
 
     //width: 100%;
-    background-color:$colorNav;
+    background-color: $colorNav;
 
 }
 
-header{
+header {
     text-align: center;
     color: $blanco;
-    
+
 }
 
 /* menu */
 
 nav ul {
-    list-style:none;
+    list-style: none;
     display: flex;
     justify-content: space-around;
-    margin:0;
-    padding:0;
-   }
+    margin: 0;
+    padding: 0;
+}
 
-   nav ul img{
+nav ul img {
     width: 56px;
     height: 56px;
     cursor: pointer;
-   }
-   
-   /* items del menu */
-   
-   nav ul li {
-    background-color:#2e518b;
-    
-   }
-   
-   /* enlaces del menu */
-   
-   nav ul a {
-    display:block;
-    color:#fff;
-    text-decoration:none;
-    font-weight:400;
-    font-size:15px;
-    padding:10px;
-    margin-top: 10px;
-    font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    text-transform:uppercase;
-    letter-spacing:1px;
-   }
-   
-   /* items del menu */
-   
-   nav ul li {
-    position:relative;
-    margin:0;
-    padding:0;
-   }
-   
-   /* efecto al pasar el ratón por los items del menu */
-   
-   nav ul li:hover {
-    background:#5b78a7;
-   }
+}
 
-   /* menu desplegable */
+/* items del menu */
+
+nav ul li {
+    background-color: $colorNav;
+
+}
+
+/* enlaces del menu */
+
+nav ul a {
+    display: block;
+    color: $blanco;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* items del menu */
+
+nav ul li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+
+nav ul li:hover {
+    background: $colorDesplegable;
+}
+
+/* menu desplegable */
 
 nav ul ul {
-    display:none;
-    position:absolute;
-    top:100%;
-    left:0;
-    background:#eee;
-    padding:0;
-   }
-   
-   /* items del menu desplegable */
-   
-   nav ul ul li {
-    float:none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #eee;
+    padding: 0;
+}
+
+/* items del menu desplegable */
+
+nav ul ul li {
+    float: none;
     //width:150px
-   }
-   
-   /* enlaces de los items del menu desplegable */
-   
-   nav ul ul a {
+}
+
+/* enlaces de los items del menu desplegable */
+
+nav ul ul a {
     margin-top: -5px;
-    line-height:120%;
-    padding:10px 15px;
-   }
-   
-   /* items del menu desplegable al pasar el ratón */
-   
-   nav ul li:hover > ul {
-    display:block;
-   }
+    line-height: 120%;
+    padding: 10px 15px;
+}
 
-   /* formulario */
+/* items del menu desplegable al pasar el ratón */
 
-   input{
+nav ul li:hover>ul {
+    display: block;
+}
+
+/* formulario */
+
+input {
     width: 200px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-    
-   }
 
-   nav form button {
+}
+
+nav form button {
     border-radius: 10px;
     width: 70px;
     height: 35px;
-   }
+}
 
-   /* Main */
+/* Main */
 
-   main{
-
+main {
     margin-top: 20px;
-    //padding-top: 50px;
     display: flex;
-    //align-items: center;
-   
-   }
+    text-align: center;
+}
 
-
-   article{
-    //margin-top: 80px;
+/* Article General */
+article {
     width: 90%;
-    //float: left;
-    background-color: lightblue;
-   }
+    background-color: $articleColor;
+    padding: 20px;
+    border-radius: 10px;
+}
 
-   /* Section Juegos */
+.secDescripcion{
+    margin-top: 20px;
+    text-align: center;
+    background-color: $descripcion;
+    border-radius: 10px;
+}
 
-   
-
-   .sectionJuegos{
+/* Sección de Juegos */
+.sectionJuegos {
     display: flex;
     justify-content: space-around;
     padding-top: 10px;
     padding-bottom: 10px;
-   }
+    gap: 15px;
+    /* Espaciado entre elementos */
+}
 
-   .divJuegos{
-    //display: flex;
-    //justify-content: space-around;
+/* Caja para cada juego */
+.divJuegos {
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 15px;
+    background: white;
+    /* Fondo para resaltar */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra sutil */
+    width: 220px;
+    /* Tamaño uniforme */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
 
-   }
+/* Efecto hover para resaltar */
+.divJuegos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
 
-   main section div img{
-    height: 200px;
-    border-radius: 10px;
-    
-   }
+/* Imágenes dentro de .divJuegos */
+.divJuegos img {
+    height: 170px;
+    width: 100%;
+    /* Ajusta el tamaño para llenar el div */
+    object-fit: cover;
+    /* Asegura que la imagen no se deforme */
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
 
-   /* Aside */
+/* Efecto hover en imágenes */
+.divJuegos img:hover {
+    transform: scale(1.1);
+}
 
-   aside{
+/* Texto debajo de las imágenes */
+.divJuegos p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+
+
+
+
+/* Aside */
+
+aside {
     //float: right;
-    background-color: aqua;
+    background-color: $aside;
     width: 10%;
-   }
+    border-radius: 10px;
+}
 
-   aside h2{
+aside h2 {
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
-   }
+}
 
-   aside ul{
+aside ul {
     list-style: none;
     padding: 0;
     text-align: center;
     //margin-top: 10px;
-   }
+}
 
-   aside ul li{
+aside ul li {
     padding: 10px;
     margin-bottom: 10px;
     border-bottom: 1px solid #000000;
-   }
+}
 
-   aside ul li:hover{
-    background-color: #5b78a7;
-   }
+aside ul li:hover {
+    background-color: $asideResaltar;
+}
 
-   
 
-   /* Footer */
-   
-   footer{
+
+/* Footer */
+
+footer {
     display: flex;
     justify-content: space-around;
-    background-color: #2e518b;
+    background-color: $colorNav;
     color: $blanco;
     text-align: center;
     //list-style: none;
-   }
+}
 
-   footer ul {
+footer img {
+    height: 50px;
+}
+
+footer ul {
 
     list-style: none;
-    
 
-   }
-   
-   
+
+}
+
+/* Formulario */
+
+.formulario {
+    
+    width: 100%;
+    background-color: #473144;
+    color: $blanco;
+}
+
+
 
 /* Responsive */
 
 
 @media only screen and (max-width: 630px) {
 
-    input{
+    input {
         width: 100px;
         padding: 10px;
         margin-top: 10px;
         margin-bottom: 10px;
-        
-       }
 
-    aside{
-    display: none;
-   }
+    }
 
-    main section{
-    flex-direction: column;
-   }
+    nav ul a{
+        font-size: 12px;
+    }
 
-   article{
-    width: 100%;
-    float: none;
-    text-align: center;
-   }
+    aside {
+        display: none;
+    }
 
-   main section div img{
-    height: 200px;
-    border-radius: 10px;
-   }
+    main section {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .sectionJuegos {
+        display: flex;
+        justify-content: center;
+        /* Centra los elementos horizontalmente */
+        align-items: center;
+        /* Centra los elementos verticalmente */
+        gap: 20px;
+    }
+
+    footer {
+        display: block;
+
+    }
 }
